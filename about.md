@@ -14,6 +14,8 @@ There are currently two themes built on Poole:
 * [Hyde](http://hyde.getpoole.com)
 * [Lanyon](http://lanyon.getpoole.com)
 
+<p><span style="font-weight:bold"><a href="../_assets/Resume_Zhao.pdf">Resume</a></span> | <span style="font-weight:bold"><a href="https://www.linkedin.com/in/peter-zhao/">Linkedin</a></span> </p>
+
 Learn more and contribute on [GitHub](https://github.com/poole).
 
 ## Setup
