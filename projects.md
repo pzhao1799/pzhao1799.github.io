@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About Me
+title: Projects
 ---
 
 <p class="message">
-  Hi, I'm Peter, and I'm currently a student at Williams College studying Computer Science and Mathematics. I'm passionate about using technology and designing algorithms to solve global problems, and developing software that empowers minorities and disadvantaged populations. 
+  This is a temporary Project Page
 </p>
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+This page will be reserved for a list of my projects
 
 There are currently two themes built on Poole:
 
