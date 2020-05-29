@@ -11,20 +11,12 @@ Here's a code snippet to celebrate! Programmed in Python 3, and if you want to s
 text = "Hello World"
 excitement = 7
 
-def celebrate(input, excite):
-    output = ""
+def celebrate(string, excite):
     for i in range(excite):
-        output
+        string += "!"
+    return string
 
-function celebrate(input : string, excite : number) : string {
-    let bangs = ""
-    for(i = 0; i < excite; i ++){
-        bangs.concat('!';)
-    }
-	return input.concat(bangs)
-}
-
-console.log(celebrate(text, excitement))
+print(celebrate(text,excitement))
 ```
 
 Enjoy, and welcome!
