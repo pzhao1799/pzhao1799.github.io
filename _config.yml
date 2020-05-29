@@ -3,7 +3,7 @@ title:               Peter Zhao
 tagline:             'wistful thoughts'
 description:         'Welcome to my personal site and blog.'
 url:                 http://lanyon.getpoole.com
-baseurl:             'https://github.com/pzhao1799/pzhao1799.github.io'
+baseurl:             'https://github.com/pzhao1799/pzhao1799.github.io/'
 paginate:            5
 permalink:           pretty
 
