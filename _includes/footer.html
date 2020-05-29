@@ -1,0 +1,22 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer left column one-half">
+      <section class="small-font">
+        <!-- Theme <a href="https://github.com/wild-flame/jekyll-simple"> Simple </a> by <a href="http://wildflame.me">wildflame</a>
+        © 2016  -->
+        Powered by <a href="https://github.com/jekyll/jekyll">jekyll</a>
+      </section>
+    </div>
+
+    <div class="footer right column one-half">
+      <section class="small-font">
+        {% if site.github_username %}
+        <a href="https://github.com/{{ site.github_username }}"><span class="icon icon--github">{% include icons/github.svg %}</span></a>
+        {% endif %}
+        {% if site.linkedin_username %}
+        <a href="https://linkedin.com/in/{{ site.linkedin_username }}"><span class="icon icon--linkedin">{% include icons/linkedin.svg %}</span></a>
+        {% endif %}
+      </section>
+    </div>
+  </div>
+</footer>
