@@ -1,31 +1,22 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# Setup
+title:               Peter Zhao
+tagline:             'wistful thoughts'
+description:         'Welcome to my personal site and blog.'
+url:                 http://lanyon.getpoole.com
+baseurl:             'https://github.com/pzhao1799.github.io/pzhao1799/'
+paginate:            5
+permalink:           pretty
 
-encoding: UTF-8
-# Site settings
-title: Peter Zhao
-email: pjz1@williams.edu
-description: > # this means to ignore newlines until "baseurl:"
-  Peter Zhao's website logging his personal thoughts, experiences, projects, and music
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "http://pzhao1799.github.io" # the base hostname & protocol for your site
-github_username: pzhao1799
-linkedin_username: peter-zhao
+# About/contact
+author:
+  name:              Peter Zhao
+  url:               https://pzhao1799.github.io/
+  email:             pzhao1799@gmail.com
 
-# Build settings
-markdown: kramdown
-kramdown:
-  input: GFM
-  smart_quotes:  ["apos", "apos", "quot", "quot"]
+# Gems
+plugins:
+  - jekyll-paginate
 
-# Third-party services
-# just leave someone empty to disable it
-# google_analytics: 
-disqus_shortname:
-
-# used this for post_excerpt at index_page
-excerpt_separator: <!--description-->
+# Custom vars
+version:             1.0.0
+google_analytics_id: #UA-XXXX-Y
