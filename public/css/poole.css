@@ -430,13 +430,14 @@ a.pagination-item:hover {
 
 @media only screen and (min-width: 630px) {
   /* only for screens wider or equal to 630 pixels */
-  /* code from https://www.thesitewizard.com/css/design-2-column-layout.shtml */
   #image {
     float: left ;
     width: 30% ;
+    height: 240px;
   }
   #content {
     float: right;
     width: 68%;
+    height: 240px;
   }
 }
