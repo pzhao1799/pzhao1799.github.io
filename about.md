@@ -6,13 +6,14 @@ title: About Me
   <div id="image"><img src="../profile.jpg" alt="profile" width="230"> </div>
   <div id="content">
     <p class="message">
-    I'm Peter, a CS/Math student at Williams College and future software engineer. I'm passionate about using technology and designing algorithms to solve global problems, and developing software that empowers minorities and disadvantaged populations. 
+    I'm Peter, a CS/Math student at Williams College and future software engineer. I'm passionate about using technology and designing algorithms to solve global problems, and developing software that empowers minorities and disadvantaged populations.
     </p>
   </div>
 </div>
 Check out my [Resume](../Resume_Zhao.pdf), my projects on [Github](https://https://github.com/pzhao1799/), and add me on [Linkedin](https://www.linkedin.com/in/peter-zhao/)!
 
 ## Who I am
+Again, I'm Peter Zhao, currently a student studying computer science and math, and hoping to make a difference in the world through software and tech. Born and raised in Northern Virginia, I was fortunate to have gone through an amazing school system with teachers and mentors who helped me get interested in **STEM**
 
 ## Technical Skills
 
