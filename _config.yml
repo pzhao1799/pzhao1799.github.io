@@ -2,7 +2,7 @@
 title:               Peter Zhao
 tagline:             'wistful thoughts'
 description:         'Welcome to my personal site and blog.'
-url:                 https://pzhao1799.github.io/
+url:                 https://pzhao1799.github.io
 baseurl:             ''
 paginate:            5
 permalink:           pretty
