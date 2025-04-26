@@ -1,85 +1,158 @@
 /* Light mode styles */
-body {
+body.light-mode {
   background-color: var(--light-bg);
   color: var(--light-text);
 }
 
-h1, h2, h3, h4, h5, h6 {
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5,
+body.light-mode h6 {
   color: var(--light-text);
 }
 
-.masthead {
-  border-bottom: 1px solid var(--light-masthead-border);
+body.light-mode strong,
+body.light-mode b {
+  color: var(--light-text);
+  font-weight: 600;
 }
 
-.masthead-title {
+body.light-mode .masthead {
+  border-bottom: 1px solid var(--light-border);
+}
+
+body.light-mode .masthead-title,
+body.light-mode .masthead-title a {
   color: var(--brand-green);
 }
 
-.masthead-title a {
-  color: var(--brand-green);
+body.light-mode .masthead-title small {
+  color: var(--light-text-muted);
 }
 
-.masthead-title small {
-  color: var(--light-masthead-title-small);
-}
-
-.sidebar {
+body.light-mode .sidebar {
   background-color: var(--light-sidebar-bg);
   color: var(--light-sidebar-text);
 }
 
-.sidebar a {
+body.light-mode .sidebar a {
   color: var(--light-text);
 }
 
-.sidebar-nav-item.active,
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
+body.light-mode .sidebar-nav-item.active,
+body.light-mode a.sidebar-nav-item:hover,
+body.light-mode a.sidebar-nav-item:focus {
   background-color: var(--light-sidebar-hover);
 }
 
-.sidebar-toggle {
-  color: var(--light-text);
-  background-color: #f5f5f5;
+body.light-mode .sidebar-toggle {
+  color: var(--light-button-text);
+  background-color: var(--light-button-bg);
 }
 
-.sidebar-toggle:active,
-#sidebar-checkbox:focus ~ .sidebar-toggle {
-  color: var(--light-text);
+body.light-mode .sidebar-toggle:active,
+body.light-mode #sidebar-checkbox:focus ~ .sidebar-toggle {
+  color: var(--light-button-text);
   background-color: var(--brand-green);
 }
 
-#sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: var(--light-text);
+body.light-mode #sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: var(--light-button-text);
   background-color: var(--brand-green);
 }
 
-#sidebar-checkbox:not(:checked) ~ .sidebar-toggle {
-  color: var(--light-text);
-  background-color: #f5f5f5;
+body.light-mode #sidebar-checkbox:not(:checked) ~ .sidebar-toggle {
+  color: var(--light-button-text);
+  background-color: var(--light-button-bg);
 }
 
-a {
+body.light-mode #sidebar-checkbox:not(:checked) ~ .sidebar-toggle::before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23505050' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
+}
+
+body.light-mode a {
   color: var(--light-link);
 }
 
-a:hover {
+body.light-mode a:hover {
   color: var(--light-link-hover);
 }
 
-.post {
+body.light-mode .post,
+body.light-mode .post-title {
   color: var(--light-text);
 }
 
-.post-title {
-  color: var(--light-text);
-}
-
-.post-date {
+body.light-mode .post-date {
   color: var(--light-text-muted);
 }
 
-.message {
+body.light-mode .message {
   color: var(--light-text);
+}
+
+/* Code and box styles */
+body.light-mode pre,
+body.light-mode code {
+  background-color: var(--light-button-bg);
+  color: var(--light-text);
+  border: 1px solid var(--light-border);
+}
+
+body.light-mode pre {
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+body.light-mode code {
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+body.light-mode .highlight {
+  background-color: var(--light-button-bg);
+  border: 1px solid var(--light-border);
+  border-radius: 4px;
+}
+
+body.light-mode .highlight pre {
+  background-color: transparent;
+  border: none;
+  padding: 1rem;
+}
+
+/* Box styles for about me and other content */
+body.light-mode div {
+  background-color: transparent;
+}
+
+body.light-mode .message {
+  background-color: var(--light-button-bg);
+  border: 1px solid var(--light-border);
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: var(--light-button-bg);
+  color: var(--light-text);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
 } 

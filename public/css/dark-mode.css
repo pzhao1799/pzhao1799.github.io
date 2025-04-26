@@ -20,19 +20,16 @@ body.dark-mode b {
 }
 
 body.dark-mode .masthead {
-  border-bottom: 1px solid var(--dark-masthead-border);
+  border-bottom: 1px solid var(--dark-border);
 }
 
-body.dark-mode .masthead-title {
-  color: var(--brand-green);
-}
-
+body.dark-mode .masthead-title,
 body.dark-mode .masthead-title a {
   color: var(--brand-green);
 }
 
 body.dark-mode .masthead-title small {
-  color: var(--dark-masthead-title-small);
+  color: var(--dark-text-muted);
 }
 
 body.dark-mode .sidebar {
@@ -51,24 +48,24 @@ body.dark-mode a.sidebar-nav-item:focus {
 }
 
 body.dark-mode .sidebar-toggle {
-  color: var(--dark-text);
-  background-color: #2d2d2d;
+  color: var(--dark-button-text);
+  background-color: var(--dark-button-bg);
 }
 
 body.dark-mode .sidebar-toggle:active,
 body.dark-mode #sidebar-checkbox:focus ~ .sidebar-toggle {
-  color: var(--dark-text);
+  color: var(--dark-button-text);
   background-color: var(--brand-green);
 }
 
 body.dark-mode #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: var(--dark-text);
+  color: var(--dark-button-text);
   background-color: var(--brand-green);
 }
 
 body.dark-mode #sidebar-checkbox:not(:checked) ~ .sidebar-toggle {
-  color: var(--dark-text);
-  background-color: #2d2d2d;
+  color: var(--dark-button-text);
+  background-color: var(--dark-button-bg);
 }
 
 body.dark-mode a {
@@ -79,10 +76,7 @@ body.dark-mode a:hover {
   color: var(--dark-link-hover);
 }
 
-body.dark-mode .post {
-  color: var(--dark-text);
-}
-
+body.dark-mode .post,
 body.dark-mode .post-title {
   color: var(--dark-text);
 }
@@ -98,28 +92,24 @@ body.dark-mode .message {
 /* Code and box styles for dark mode */
 body.dark-mode pre,
 body.dark-mode code {
-  background-color: #2d2d2d;
-  color: #e0e0e0;
-  border: 1px solid #3d3d3d;
+  background-color: var(--dark-button-bg);
+  color: var(--dark-text);
+  border: 1px solid var(--dark-border);
 }
 
 body.dark-mode pre {
-  background-color: #2d2d2d;
-  border: 1px solid #3d3d3d;
   border-radius: 4px;
   padding: 1rem;
 }
 
 body.dark-mode code {
-  background-color: #2d2d2d;
-  color: #e0e0e0;
   padding: 0.2rem 0.4rem;
   border-radius: 3px;
 }
 
 body.dark-mode .highlight {
-  background-color: #2d2d2d;
-  border: 1px solid #3d3d3d;
+  background-color: var(--dark-button-bg);
+  border: 1px solid var(--dark-border);
   border-radius: 4px;
 }
 
@@ -135,8 +125,8 @@ body.dark-mode div {
 }
 
 body.dark-mode .message {
-  background-color: #2d2d2d;
-  border: 1px solid #3d3d3d;
+  background-color: var(--dark-button-bg);
+  border: 1px solid var(--dark-border);
   border-radius: 4px;
   padding: 1rem;
   margin: 0;
