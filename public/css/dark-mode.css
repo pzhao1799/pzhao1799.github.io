@@ -4,31 +4,33 @@ body.dark-mode {
   color: var(--dark-text);
 }
 
+/* Typography */
 body.dark-mode h1,
 body.dark-mode h2,
 body.dark-mode h3,
 body.dark-mode h4,
 body.dark-mode h5,
-body.dark-mode h6 {
+body.dark-mode h6,
+body.dark-mode strong,
+body.dark-mode b {
   color: var(--dark-text);
 }
 
 body.dark-mode strong,
 body.dark-mode b {
-  color: var(--dark-text);
   font-weight: 600;
 }
 
+/* Masthead */
 body.dark-mode .masthead {
   border-bottom: 1px solid var(--dark-border);
 }
 
-/* Remove dark mode override for masthead title to let theme color show through */
 body.dark-mode .masthead-title small {
   color: var(--dark-text-muted);
 }
 
-/* Let the theme control the sidebar background */
+/* Sidebar */
 body.dark-mode .sidebar {
   color: var(--dark-text);
 }
@@ -43,17 +45,14 @@ body.dark-mode a.sidebar-nav-item:focus {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* Let the theme control the sidebar toggle */
+/* Sidebar toggle */
 body.dark-mode .sidebar-toggle {
   color: var(--dark-button-text);
   background-color: var(--dark-button-bg);
 }
 
 body.dark-mode .sidebar-toggle:active,
-body.dark-mode #sidebar-checkbox:focus ~ .sidebar-toggle {
-  color: var(--dark-button-text);
-}
-
+body.dark-mode #sidebar-checkbox:focus ~ .sidebar-toggle,
 body.dark-mode #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: var(--dark-button-text);
 }
@@ -63,6 +62,7 @@ body.dark-mode #sidebar-checkbox:not(:checked) ~ .sidebar-toggle {
   background-color: var(--dark-button-bg);
 }
 
+/* Links */
 body.dark-mode a {
   color: var(--dark-link);
 }
@@ -71,6 +71,7 @@ body.dark-mode a:hover {
   color: var(--dark-link-hover);
 }
 
+/* Content */
 body.dark-mode .post,
 body.dark-mode .post-title {
   color: var(--dark-text);
@@ -84,7 +85,7 @@ body.dark-mode .message {
   color: var(--dark-text);
 }
 
-/* Code and box styles for dark mode */
+/* Code and box styles */
 body.dark-mode pre,
 body.dark-mode code {
   background-color: var(--dark-button-bg);
@@ -114,7 +115,7 @@ body.dark-mode .highlight pre {
   padding: 1rem;
 }
 
-/* Box styles for about me and other content */
+/* Box styles */
 body.dark-mode div {
   background-color: transparent;
 }
@@ -127,7 +128,7 @@ body.dark-mode .message {
   margin: 0;
 }
 
-/* Dark mode toggle button */
+/* Theme toggle button */
 .theme-toggle {
   position: fixed;
   bottom: 20px;
