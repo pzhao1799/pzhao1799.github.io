@@ -23,18 +23,14 @@ body.dark-mode .masthead {
   border-bottom: 1px solid var(--dark-border);
 }
 
-body.dark-mode .masthead-title,
-body.dark-mode .masthead-title a {
-  color: var(--brand-green);
-}
-
+/* Remove dark mode override for masthead title to let theme color show through */
 body.dark-mode .masthead-title small {
   color: var(--dark-text-muted);
 }
 
+/* Let the theme control the sidebar background */
 body.dark-mode .sidebar {
-  background-color: var(--dark-sidebar-bg);
-  color: var(--dark-sidebar-text);
+  color: var(--dark-text);
 }
 
 body.dark-mode .sidebar a {
@@ -44,9 +40,10 @@ body.dark-mode .sidebar a {
 body.dark-mode .sidebar-nav-item.active,
 body.dark-mode a.sidebar-nav-item:hover,
 body.dark-mode a.sidebar-nav-item:focus {
-  background-color: var(--dark-sidebar-hover);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
+/* Let the theme control the sidebar toggle */
 body.dark-mode .sidebar-toggle {
   color: var(--dark-button-text);
   background-color: var(--dark-button-bg);
@@ -55,12 +52,10 @@ body.dark-mode .sidebar-toggle {
 body.dark-mode .sidebar-toggle:active,
 body.dark-mode #sidebar-checkbox:focus ~ .sidebar-toggle {
   color: var(--dark-button-text);
-  background-color: var(--brand-green);
 }
 
 body.dark-mode #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: var(--dark-button-text);
-  background-color: var(--brand-green);
 }
 
 body.dark-mode #sidebar-checkbox:not(:checked) ~ .sidebar-toggle {
