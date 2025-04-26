@@ -1,0 +1,76 @@
+/* Light mode styles */
+body {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--light-text);
+}
+
+.masthead {
+  border-bottom: 1px solid var(--light-masthead-border);
+}
+
+.masthead-title {
+  color: var(--light-masthead-title);
+}
+
+.masthead-title a {
+  color: var(--light-masthead-title);
+}
+
+.masthead-title small {
+  color: var(--light-masthead-title-small);
+}
+
+.sidebar {
+  background-color: var(--light-sidebar-bg);
+  color: var(--light-sidebar-text);
+}
+
+.sidebar a {
+  color: var(--light-text);
+}
+
+.sidebar-nav-item.active,
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  background-color: var(--light-sidebar-hover);
+}
+
+.sidebar-toggle {
+  color: var(--light-sidebar-toggle);
+  background-color: var(--light-sidebar-toggle-bg);
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  color: var(--light-sidebar-toggle-active);
+  background-color: var(--light-sidebar-toggle-active-bg);
+}
+
+a {
+  color: var(--light-link);
+}
+
+a:hover {
+  color: var(--light-link-hover);
+}
+
+.post {
+  color: var(--light-text);
+}
+
+.post-title {
+  color: var(--light-text);
+}
+
+.post-date {
+  color: var(--light-text-muted);
+}
+
+.message {
+  color: var(--light-text);
+} 

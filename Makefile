@@ -12,11 +12,12 @@ build:
 serve:
 	bundle exec jekyll serve --livereload
 
-# Clean the site
+# Clean the site and kill existing Jekyll processes
 clean:
 	rm -rf _site
 	rm -rf .jekyll-cache
 	rm -rf .jekyll-metadata
+	pkill -f jekyll || true
 
 # Default target
 all: install build 
