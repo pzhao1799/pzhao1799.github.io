@@ -13,11 +13,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .masthead-title {
-  color: var(--light-masthead-title);
+  color: var(--brand-green);
 }
 
 .masthead-title a {
-  color: var(--light-masthead-title);
+  color: var(--brand-green);
 }
 
 .masthead-title small {
@@ -40,15 +40,24 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-toggle {
-  color: var(--light-sidebar-toggle);
-  background-color: var(--light-sidebar-toggle-bg);
+  color: var(--light-text);
+  background-color: #f5f5f5;
 }
 
 .sidebar-toggle:active,
-#sidebar-checkbox:focus ~ .sidebar-toggle,
+#sidebar-checkbox:focus ~ .sidebar-toggle {
+  color: var(--light-text);
+  background-color: var(--brand-green);
+}
+
 #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: var(--light-sidebar-toggle-active);
-  background-color: var(--light-sidebar-toggle-active-bg);
+  color: var(--light-text);
+  background-color: var(--brand-green);
+}
+
+#sidebar-checkbox:not(:checked) ~ .sidebar-toggle {
+  color: var(--light-text);
+  background-color: #f5f5f5;
 }
 
 a {

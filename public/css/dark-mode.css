@@ -24,11 +24,11 @@ body.dark-mode .masthead {
 }
 
 body.dark-mode .masthead-title {
-  color: var(--dark-masthead-title);
+  color: var(--brand-green);
 }
 
 body.dark-mode .masthead-title a {
-  color: var(--dark-masthead-title);
+  color: var(--brand-green);
 }
 
 body.dark-mode .masthead-title small {
@@ -51,15 +51,24 @@ body.dark-mode a.sidebar-nav-item:focus {
 }
 
 body.dark-mode .sidebar-toggle {
-  color: var(--dark-sidebar-toggle);
-  background-color: var(--dark-sidebar-toggle-bg);
+  color: var(--dark-text);
+  background-color: #2d2d2d;
 }
 
 body.dark-mode .sidebar-toggle:active,
-body.dark-mode #sidebar-checkbox:focus ~ .sidebar-toggle,
+body.dark-mode #sidebar-checkbox:focus ~ .sidebar-toggle {
+  color: var(--dark-text);
+  background-color: var(--brand-green);
+}
+
 body.dark-mode #sidebar-checkbox:checked ~ .sidebar-toggle {
-  color: var(--dark-sidebar-toggle-active);
-  background-color: var(--dark-sidebar-toggle-active-bg);
+  color: var(--dark-text);
+  background-color: var(--brand-green);
+}
+
+body.dark-mode #sidebar-checkbox:not(:checked) ~ .sidebar-toggle {
+  color: var(--dark-text);
+  background-color: #2d2d2d;
 }
 
 body.dark-mode a {
