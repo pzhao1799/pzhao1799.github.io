@@ -1,0 +1,75 @@
+/* Dark mode styles */
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+}
+
+body.dark-mode .sidebar {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+}
+
+body.dark-mode .sidebar-nav-item {
+  color: #e0e0e0;
+}
+
+body.dark-mode .sidebar-nav-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #3d3d3d;
+}
+
+body.dark-mode .sidebar-nav-item.active {
+  color: #fff;
+  font-weight: bold;
+}
+
+body.dark-mode a {
+  color: #4a9eff;
+}
+
+body.dark-mode a:hover {
+  color: #6fb3ff;
+}
+
+body.dark-mode .post {
+  color: #e0e0e0;
+}
+
+body.dark-mode .post-title {
+  color: #fff;
+}
+
+body.dark-mode .post-date {
+  color: #b0b0b0;
+}
+
+body.dark-mode .message {
+  color: #e0e0e0;
+}
+
+/* Dark mode toggle button */
+.theme-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+body.dark-mode .theme-toggle {
+  background-color: #e0e0e0;
+  color: #2d2d2d;
+} 
