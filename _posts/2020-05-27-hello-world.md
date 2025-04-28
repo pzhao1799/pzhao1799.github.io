@@ -7,7 +7,7 @@ Welcome to my website! My first post shall be the classic Hello World program th
 
 Here's a code snippet to celebrate! Programmed in Python 3, and if you want to see what it does, just copy it into your favorite Python compiler!
 
-``` python
+```python
 text = "Hello World"
 excitement = 7
 
