@@ -29,11 +29,11 @@ document.addEventListener('DOMContentLoaded', function() {
         copyButton.innerHTML = checkIcon;
         copyButton.classList.add('copied');
         
-        // Reset button after 2 seconds
+        // Reset button after 1.5 seconds
         setTimeout(function() {
           copyButton.innerHTML = copyIcon;
           copyButton.classList.remove('copied');
-        }, 2000);
+        }, 1500);
       }).catch(function(err) {
         console.error('Failed to copy code: ', err);
       });
