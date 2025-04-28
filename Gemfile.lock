@@ -77,7 +77,6 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-paginate (~> 1.1)
   jekyll-seo-tag (~> 2.8)
-  rouge (~> 4.1.0)
   webrick (~> 1.8)
 
 BUNDLED WITH
