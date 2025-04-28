@@ -114,25 +114,49 @@
 }
 
 /* Brown */
-.theme-base-0f .sidebar,
-.theme-base-0f .sidebar-toggle:active,
-.theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {
+.brown .sidebar,
+.brown .sidebar-toggle:active,
+.brown #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #8f5536;
 }
-.theme-base-0f .container a,
-.theme-base-0f .sidebar-toggle,
-.theme-base-0f .related-posts li a:hover {
+.brown .container a,
+.brown .sidebar-toggle,
+.brown .related-posts li a:hover {
   color: #8f5536;
 }
 
 /* Plant Green */
-.theme-base-0g .sidebar,
-.theme-base-0g .sidebar-toggle:active,
-.theme-base-0g #sidebar-checkbox:checked ~ .sidebar-toggle {
+.plant .sidebar,
+.plant .sidebar-toggle:active,
+.plant #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #77b255;
 }
-.theme-base-0g .container a,
-.theme-base-0g .sidebar-toggle,
-.theme-base-0g .related-posts li a:hover {
+.plant .container a,
+.plant .sidebar-toggle,
+.plant .related-posts li a:hover {
   color: #77b255;
+}
+
+/* Vine Green */
+.vine .sidebar,
+.vine .sidebar-toggle:active,
+.vine #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #5a8f3d;
+}
+.vine .container a,
+.vine .sidebar-toggle,
+.vine .related-posts li a:hover {
+  color: #5a8f3d;
+}
+
+/* Lavender/Wisteria */
+.lavender .sidebar,
+.lavender .sidebar-toggle:active,
+.lavender #sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: #9d8cc7;
+}
+.lavender .container a,
+.lavender .sidebar-toggle,
+.lavender .related-posts li a:hover {
+  color: #9d8cc7;
 } 
