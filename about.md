@@ -6,7 +6,7 @@ title: About Me
   <img src="../profile.jpg" alt="profile" width="230" class="profile-image">
   <div class="profile-content">
     <p class="message">
-    I'm Peter, a software engineer at OpenAI and an alumni at Williams College. I'm passionate about designing ultra-scalable systems to solve global problems, and developing software that empowers disadvantaged populations.
+    I'm Peter, a software engineer at OpenAI and an alumni at Williams College. I am broadly interested in ML systems, passionate about designing ultra-scalable systems to solve global problems, and making tools that are actually enjoyable and useful to use.
     </p>
   </div>
 </div>
@@ -28,3 +28,4 @@ Check out my [Resume](../Resume.pdf), my projects on [Github](https://github.com
 - Education
 - Personal Finance
 - Lego 🧱
+- Refurbishing old electronics
