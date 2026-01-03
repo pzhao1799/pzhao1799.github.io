@@ -152,7 +152,13 @@
 .vine .related-posts li a:hover {
   color: #5a8f3d;
 }
-.vine .container a:hover {
+/* Vine theme link hovers - ensure they work in both light and dark modes */
+/* Note: vine class is on body element, so .vine selector works for body */
+/* Exclude sidebar links from theme color - they have their own styling */
+.vine a:hover:not(.sidebar-nav-item),
+.vine .container a:hover,
+body.light-mode.vine a:hover:not(.sidebar-nav-item),
+body.light-mode.vine .container a:hover {
   color: #5a8f3d;
 }
 

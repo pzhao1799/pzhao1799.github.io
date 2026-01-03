@@ -60,6 +60,16 @@ body.light-mode a.sidebar-nav-item:focus {
   background-color: var(--light-sidebar-hover);
 }
 
+/* Override theme colors for sidebar links - they should not use theme color */
+body.light-mode .sidebar a,
+body.light-mode .sidebar a:hover,
+body.light-mode .sidebar a:focus,
+body.light-mode.vine .sidebar a,
+body.light-mode.vine .sidebar a:hover,
+body.light-mode.vine .sidebar a:focus {
+  color: var(--light-sidebar-text) !important;
+}
+
 /* Sidebar toggle */
 body.light-mode .sidebar-toggle {
   color: var(--light-button-text);

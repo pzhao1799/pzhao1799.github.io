@@ -60,6 +60,16 @@ body.dark-mode a.sidebar-nav-item:focus {
   background-color: var(--dark-sidebar-hover);
 }
 
+/* Override theme colors for sidebar links - they should not use theme color */
+body.dark-mode .sidebar a,
+body.dark-mode .sidebar a:hover,
+body.dark-mode .sidebar a:focus,
+body.dark-mode.vine .sidebar a,
+body.dark-mode.vine .sidebar a:hover,
+body.dark-mode.vine .sidebar a:focus {
+  color: var(--dark-sidebar-text) !important;
+}
+
 /* Sidebar toggle */
 body.dark-mode .sidebar-toggle {
   color: var(--dark-button-text);
@@ -82,6 +92,7 @@ body.dark-mode a {
   color: var(--dark-link);
 }
 
+/* Default link hover - can be overridden by theme-specific rules */
 body.dark-mode a:hover {
   color: var(--dark-link-hover);
 }
@@ -204,4 +215,14 @@ body.dark-mode #sidebar-checkbox:checked ~ .sidebar-toggle::before {
 body.dark-mode .theme-toggle {
   background-color: var(--dark-text);
   color: var(--dark-bg);
+}
+
+/* Theme-specific link hover overrides - must come after general dark mode rules */
+/* Since vine class is on body, use body.dark-mode.vine selector */
+/* Exclude sidebar links - they have their own styling */
+body.dark-mode.vine a:hover:not(.sidebar-nav-item),
+body.dark-mode.vine .container a:hover,
+body.dark-mode.vine .footer-links a:hover,
+body.dark-mode.vine .related-posts li a:hover {
+  color: #5a8f3d !important;
 } 
