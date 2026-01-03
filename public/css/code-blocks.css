@@ -27,6 +27,11 @@
   word-wrap: normal;
   word-break: normal;
   overflow-wrap: normal;
+  font-variant-ligatures: none;
+  font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
+  -ms-font-feature-settings: normal;
 }
 
 /* Style the pre element */
