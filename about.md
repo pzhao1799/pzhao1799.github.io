@@ -26,6 +26,6 @@ Check out my [Resume](../Resume.pdf), my projects on [Github](https://github.com
 
 - Medical Technology, especially in how we improve patient experience and outcomes and lower the cost of care
 - Education
-- Personal Finance
+- Personal Finance + Crypto
 - Lego 🧱
 - Refurbishing old electronics
