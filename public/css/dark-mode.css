@@ -4,6 +4,21 @@ body.dark-mode {
   color: var(--dark-text);
 }
 
+/* Ensure all base elements use dark mode variables */
+body.dark-mode,
+body.dark-mode * {
+  --current-bg: var(--dark-bg);
+  --current-text: var(--dark-text);
+  --current-text-muted: var(--dark-text-muted);
+  --current-border: var(--dark-border);
+  --current-link: var(--dark-link);
+  --current-link-hover: var(--dark-link-hover);
+  --current-button-bg: var(--dark-button-bg);
+  --current-button-text: var(--dark-button-text);
+  --current-code-bg: var(--dark-code-bg);
+  --current-code-text: var(--dark-code-text);
+}
+
 /* Typography */
 body.dark-mode h1,
 body.dark-mode h2,
@@ -42,7 +57,7 @@ body.dark-mode .sidebar a {
 body.dark-mode .sidebar-nav-item.active,
 body.dark-mode a.sidebar-nav-item:hover,
 body.dark-mode a.sidebar-nav-item:focus {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--dark-sidebar-hover);
 }
 
 /* Sidebar toggle */
@@ -88,8 +103,8 @@ body.dark-mode .message {
 /* Code and box styles */
 body.dark-mode pre,
 body.dark-mode code {
-  background-color: var(--dark-button-bg);
-  color: var(--dark-text);
+  background-color: var(--dark-code-bg);
+  color: var(--dark-code-text);
   border: 1px solid var(--dark-border);
 }
 
@@ -104,7 +119,7 @@ body.dark-mode code {
 }
 
 body.dark-mode .highlight {
-  background-color: var(--dark-button-bg);
+  background-color: var(--dark-code-bg);
   border: 1px solid var(--dark-border);
   border-radius: 4px;
 }
@@ -126,6 +141,43 @@ body.dark-mode .message {
   border-radius: 4px;
   padding: 1rem;
   margin: 0;
+  color: var(--dark-text);
+}
+
+/* Tables */
+body.dark-mode table {
+  border-color: var(--dark-border);
+}
+
+body.dark-mode td,
+body.dark-mode th {
+  border-color: var(--dark-border);
+}
+
+body.dark-mode tbody tr:nth-child(odd) td,
+body.dark-mode tbody tr:nth-child(odd) th {
+  background-color: var(--dark-button-bg);
+}
+
+/* Blockquotes */
+body.dark-mode blockquote {
+  color: var(--dark-text-muted);
+  border-left-color: var(--dark-border);
+}
+
+/* HR */
+body.dark-mode hr {
+  border-top-color: var(--dark-border);
+  border-bottom-color: var(--dark-bg);
+}
+
+/* Sidebar toggle SVG for dark mode */
+body.dark-mode #sidebar-checkbox:not(:checked) ~ .sidebar-toggle::before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23e0e0e0' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
+}
+
+body.dark-mode #sidebar-checkbox:checked ~ .sidebar-toggle::before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 16 16' fill='%23e0e0e0' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' d='M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z' clip-rule='evenodd'/%3E%3C/svg%3E") no-repeat;
 }
 
 /* Theme toggle button */

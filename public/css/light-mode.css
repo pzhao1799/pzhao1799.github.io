@@ -4,6 +4,21 @@ body.light-mode {
   color: var(--light-text);
 }
 
+/* Ensure all base elements use light mode variables */
+body.light-mode,
+body.light-mode * {
+  --current-bg: var(--light-bg);
+  --current-text: var(--light-text);
+  --current-text-muted: var(--light-text-muted);
+  --current-border: var(--light-border);
+  --current-link: var(--light-link);
+  --current-link-hover: var(--light-link-hover);
+  --current-button-bg: var(--light-button-bg);
+  --current-button-text: var(--light-button-text);
+  --current-code-bg: var(--light-code-bg);
+  --current-code-text: var(--light-code-text);
+}
+
 /* Typography */
 body.light-mode h1,
 body.light-mode h2,
@@ -92,8 +107,8 @@ body.light-mode .message {
 /* Code and box styles */
 body.light-mode pre,
 body.light-mode code {
-  background-color: var(--light-button-bg);
-  color: var(--light-text);
+  background-color: var(--light-code-bg);
+  color: var(--light-code-text);
   border: 1px solid var(--light-border);
 }
 
@@ -108,7 +123,7 @@ body.light-mode code {
 }
 
 body.light-mode .highlight {
-  background-color: var(--light-button-bg);
+  background-color: var(--light-code-bg);
   border: 1px solid var(--light-border);
   border-radius: 4px;
 }
@@ -130,6 +145,34 @@ body.light-mode .message {
   border-radius: 4px;
   padding: 1rem;
   margin: 0;
+  color: var(--light-text);
+}
+
+/* Tables */
+body.light-mode table {
+  border-color: var(--light-border);
+}
+
+body.light-mode td,
+body.light-mode th {
+  border-color: var(--light-border);
+}
+
+body.light-mode tbody tr:nth-child(odd) td,
+body.light-mode tbody tr:nth-child(odd) th {
+  background-color: var(--light-button-bg);
+}
+
+/* Blockquotes */
+body.light-mode blockquote {
+  color: var(--light-text-muted);
+  border-left-color: var(--light-border);
+}
+
+/* HR */
+body.light-mode hr {
+  border-top-color: var(--light-border);
+  border-bottom-color: var(--light-bg);
 }
 
 /* Theme toggle button */

@@ -4,7 +4,7 @@
   /* Light mode colors */
   --light-bg: #fff;
   --light-text: #313131;
-  --light-text-muted: #c0c0c0;
+  --light-text-muted: #9a9a9a;
   --light-border: #eee;
   --light-sidebar-bg: #202020;
   --light-sidebar-text: rgba(255,255,255,.6);
@@ -13,6 +13,8 @@
   --light-link-hover: #2077b2;
   --light-button-bg: #f5f5f5;
   --light-button-text: #505050;
+  --light-code-bg: #f9f9f9;
+  --light-code-text: #bf616a;
 
   /* Dark mode colors */
   --dark-bg: #1a1a1a;
@@ -21,11 +23,13 @@
   --dark-border: #2d2d2d;
   --dark-sidebar-bg: #2d2d2d;
   --dark-sidebar-text: #e0e0e0;
-  --dark-sidebar-hover: #3d3d3d;
+  --dark-sidebar-hover: rgba(0, 0, 0, 0.2);
   --dark-link: #4a9eff;
   --dark-link-hover: #6fb3ff;
   --dark-button-bg: #2d2d2d;
   --dark-button-text: #e0e0e0;
+  --dark-code-bg: #1e1e1e;
+  --dark-code-text: #e0e0e0;
 }
 
 /* Theme color schemes */

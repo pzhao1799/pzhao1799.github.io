@@ -58,15 +58,15 @@ html {
 }
 
 body {
-  color: #515151;
-  background-color: #fff;
+  color: var(--light-text, #515151);
+  background-color: var(--light-bg, #fff);
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #268bd2;
+  color: var(--light-link, #268bd2);
   text-decoration: none;
 }
 a strong {
@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #313131;
+  color: var(--light-text, #313131);
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -109,7 +109,7 @@ p {
 }
 
 strong {
-  color: #303030;
+  color: var(--light-text, #303030);
 }
 
 
@@ -131,8 +131,8 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff;
+  border-top: 1px solid var(--light-border, #eee);
+  border-bottom: 1px solid var(--light-bg, #fff);
 }
 
 abbr {
@@ -154,8 +154,8 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
-  background-color: #f9f9f9;
+  color: var(--light-text, #bf616a);
+  background-color: var(--light-button-bg, #f9f9f9);
   border-radius: 3px;
 }
 pre {
@@ -169,7 +169,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: var(--light-button-bg, #f9f9f9);
 }
 pre code {
   padding: 0;
@@ -204,15 +204,6 @@ pre code {
   display: none;
 }
 
-/* Dark mode adjustments */
-body.dark-mode .highlight {
-  background-color: #1e1e1e;
-  border-color: #2d2d2d;
-}
-
-body.dark-mode .highlight pre {
-  background-color: transparent;
-}
 
 /* Gist via GitHub Pages */
 .gist .gist-file {
@@ -240,8 +231,8 @@ body.dark-mode .highlight pre {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  color: var(--light-text-muted, #7a7a7a);
+  border-left: .25rem solid var(--light-border, #e5e5e5);
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -264,17 +255,17 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--light-border, #e5e5e5);
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--light-border, #e5e5e5);
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #f9f9f9;
+  background-color: var(--light-button-bg, #f9f9f9);
 }
 
 /*
@@ -299,8 +290,8 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #717171;
-  background-color: #f9f9f9;
+  color: var(--light-text, #717171);
+  background-color: var(--light-button-bg, #f9f9f9);
 }
 
 
@@ -333,15 +324,15 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #505050;
+  color: var(--light-text, #505050);
 }
 .masthead-title a {
-  color: #505050;
+  color: var(--light-text, #505050);
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #c0c0c0;
+  color: var(--light-text-muted, #c0c0c0);
   letter-spacing: 0;
 }
 
@@ -362,7 +353,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #303030;
+  color: var(--light-text, #303030);
 }
 .page-title,
 .post-title {
@@ -374,14 +365,14 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #9a9a9a;
+  color: var(--light-text-muted, #9a9a9a);
 }
 
 /* Related posts */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--light-border, #eee);
 }
 .related-posts {
   padding-left: 0;
@@ -392,10 +383,10 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li small {
   font-size: 75%;
-  color: #999;
+  color: var(--light-text-muted, #999);
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: var(--light-link, #268bd2);
   text-decoration: none;
 }
 .related-posts li a:hover small {
@@ -415,7 +406,7 @@ tbody tr:nth-child(odd) th {
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #ccc;
+  color: var(--light-text-muted, #ccc);
   text-align: center;
 }
 
@@ -423,7 +414,7 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #eee;
+  border: 1px solid var(--light-border, #eee);
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -431,7 +422,7 @@ tbody tr:nth-child(odd) th {
 
 /* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
-  background-color: #f5f5f5;
+  background-color: var(--light-button-bg, #f5f5f5);
 }
 
 @media (min-width: 30em) {
