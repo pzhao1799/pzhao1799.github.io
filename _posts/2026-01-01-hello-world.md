@@ -3,7 +3,7 @@ layout: post
 title: Hello World
 ---
 
-Welcome to my blog! I'll be writing up my thoughts and explorations in my journey to learn more about all sorts of interesting topics.
+Welcome to my blog! It's 2026 so I'm kicking this back up again. I'll be writing up my thoughts and explorations in my journey to learn more about all sorts of interesting topics.
 
 Here's a code snippet to celebrate! Programmed in Python 3, and if you want to see what it does, just copy it into your favorite Python compiler!
 
