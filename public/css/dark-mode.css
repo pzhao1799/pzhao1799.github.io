@@ -38,7 +38,7 @@ body.dark-mode b {
 
 /* Masthead */
 body.dark-mode .masthead {
-  border-bottom: 1px solid var(--dark-border);
+  /* Border removed */
 }
 
 body.dark-mode .masthead-title small {

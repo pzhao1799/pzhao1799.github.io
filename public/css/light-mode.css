@@ -38,7 +38,7 @@ body.light-mode b {
 
 /* Masthead */
 body.light-mode .masthead {
-  border-bottom: 1px solid var(--light-border);
+  /* Border removed */
 }
 
 body.light-mode .masthead-title small {

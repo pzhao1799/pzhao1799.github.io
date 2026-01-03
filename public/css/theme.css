@@ -92,7 +92,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-top:    1rem;
   padding-bottom: 1rem;
   margin-bottom: 3rem;
-  border-bottom: 1px solid var(--light-border, #eee);
 }
 .masthead-title {
   margin-top: 0;
@@ -553,7 +552,6 @@ body.dark-mode span.pagination-item {
   margin-top: 4rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid var(--light-border, #eee);
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem;
   color: var(--light-text-muted, #9a9a9a);
