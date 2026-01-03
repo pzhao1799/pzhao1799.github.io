@@ -362,20 +362,26 @@ a.sidebar-nav-item:focus {
 
 .pagination {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   gap: 1rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 /* Pagination items - small buttons */
 .pagination-item {
-  display: inline-block;
-  padding: 0.375rem 0.75rem;
-  min-width: 3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  min-width: 5rem;
+  max-width: 100%;
   border: 1px solid var(--light-border, #e5e5e5);
   border-radius: 4px;
   background-color: var(--light-bg, #fff);
@@ -387,6 +393,8 @@ a.sidebar-nav-item:focus {
   white-space: nowrap;
   letter-spacing: -0.01em;
   text-align: center;
+  flex: 0 1 auto;
+  box-sizing: border-box;
 }
 
 /* Active/clickable pagination items */
