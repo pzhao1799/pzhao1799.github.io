@@ -79,7 +79,7 @@
   opacity: 1;
 }
 
-/* Copy button */
+/* Copy button - only on highlight container, not inside pre */
 .highlight .copy-button {
   position: absolute;
   top: 0.5rem;
@@ -99,6 +99,12 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
+  pointer-events: auto;
+}
+
+/* Hide any copy buttons that might be inside the pre element (shouldn't happen, but just in case) */
+.highlight pre .copy-button {
+  display: none !important;
 }
 
 .highlight .copy-button:hover {
