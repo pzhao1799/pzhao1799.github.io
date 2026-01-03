@@ -148,6 +148,9 @@
 .vine .related-posts li a:hover {
   color: #5a8f3d;
 }
+.vine .container a:hover {
+  color: #5a8f3d;
+}
 
 /* Lavender/Wisteria */
 .lavender .sidebar,

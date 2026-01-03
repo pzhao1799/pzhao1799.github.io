@@ -363,52 +363,98 @@ a.sidebar-nav-item:focus {
 /*
  * Pagination
  *
- * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
- * there are no more previous or next posts to show.
+ * Small buttons positioned on left and right sides.
  */
 
 .pagination {
-  overflow: hidden; /* clearfix */
-  margin-left: -1rem;
-  margin-right: -1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #ccc;
-  text-align: center;
+  gap: 1rem;
+  width: 100%;
 }
 
-/* Pagination items can be `span`s or `a`s */
+/* Pagination items - small buttons */
 .pagination-item {
-  display: block;
-  padding: 1rem;
-  border: 1px solid #eee;
-}
-.pagination-item:first-child {
-  margin-bottom: -1px;
+  display: inline-block;
+  padding: 0.375rem 0.25rem;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #515151;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 0.75rem;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
 }
 
-/* Only provide a hover state for linked pagination items */
-a.pagination-item:hover {
-  background-color: #f5f5f5;
+/* Active/clickable pagination items */
+a.pagination-item {
+  cursor: pointer;
 }
 
-@media (min-width: 30em) {
-  .pagination {
-    margin: 3rem 0;
-  }
-  .pagination-item {
-    float: left;
-    width: 50%;
-  }
-  .pagination-item:first-child {
-    margin-bottom: 0;
-    border-top-left-radius:    4px;
-    border-bottom-left-radius: 4px;
-  }
-  .pagination-item:last-child {
-    margin-left: -1px;
-    border-top-right-radius:    4px;
-    border-bottom-right-radius: 4px;
-  }
+/* Vine theme pagination buttons */
+.vine .container a.pagination-item,
+.vine a.pagination-item {
+  color: #5a8f3d !important;
+  border-color: #5a8f3d !important;
+}
+
+.vine .container a.pagination-item:hover,
+.vine .container a.pagination-item:focus,
+.vine a.pagination-item:hover,
+.vine a.pagination-item:focus {
+  background-color: #5a8f3d !important;
+  color: #fff !important;
+  border-color: #5a8f3d !important;
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(90, 143, 61, 0.2);
+}
+
+.vine .container a.pagination-item:active,
+.vine a.pagination-item:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(90, 143, 61, 0.2);
+}
+
+/* Disabled pagination items */
+span.pagination-item {
+  color: #ccc;
+  background-color: #f9f9f9;
+  border-color: #e5e5e5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Dark mode support (if applicable) */
+body.dark-mode .pagination-item {
+  background-color: #2d2d2d;
+  border-color: #404040;
+  color: #e0e0e0;
+}
+
+body.dark-mode a.pagination-item {
+  color: #4a9eff;
+  border-color: #4a9eff;
+}
+
+body.dark-mode a.pagination-item:hover,
+body.dark-mode a.pagination-item:focus {
+  background-color: #4a9eff;
+  color: #fff;
+  border-color: #4a9eff;
+}
+
+body.dark-mode span.pagination-item {
+  background-color: #1e1e1e;
+  color: #666;
+  border-color: #404040;
 }
 
 
@@ -496,5 +542,62 @@ a.pagination-item:hover {
   
   .profile-content {
     overflow: visible;
+  }
+}
+
+
+/*
+ * Site Footer
+ *
+ * Footer with social links and copyright information.
+ */
+
+.site-footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-size: .875rem;
+  color: #9a9a9a;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-links a {
+  color: #268bd2;
+  text-decoration: none;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  text-decoration: underline;
+}
+
+.footer-separator {
+  color: #ccc;
+}
+
+.footer-copyright {
+  color: #9a9a9a;
+}
+
+@media (min-width: 30em) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 }

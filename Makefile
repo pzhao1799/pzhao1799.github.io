@@ -20,4 +20,4 @@ clean:
 	pkill -f jekyll || true
 
 # Default target
-all: install build 
+all: install build serve
